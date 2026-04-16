@@ -1,0 +1,8 @@
+{
+  "langages": [
+    { "name": "Deutch",   "file": "lang_DE.json", "code": "DE" },
+    { "name": "English",  "file": "lang_EN.json", "code": "EN" },
+    { "name": "Español",  "file": "lang_ES.json", "code": "ES" },
+    { "name": "Français", "file": "lang_FR.json", "code": "FR" }
+  ]
+}
