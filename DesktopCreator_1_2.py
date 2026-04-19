@@ -459,11 +459,20 @@ def charger_langue():
     if FICHIER_LANGUE.exists():
         return FICHIER_LANGUE.read_text(encoding='utf-8').strip()
     else :
-        loc = locale.getlocale()[0]  # récup de la localisation de l'ordi (ex: fr_FR)
-        if loc :
-            return loc.split('_')[1]   # sélection des 2 dernier car. (FR)
-        else :
-            return "EN"   # anglais par défaut
+        codretour = "EN"                # anglais par défaut
+        codes_connus = [lang["code"] for lang in LANGUES]  # liste des codes langues connues
+        loc = locale.getlocale()[0]   # récup de la localisation de l'ordi (ex: fr_FR)
+        if loc:                       # fr_FR se compose de :  fr = langue, FR = pays      
+            elements = loc.split('_') # transforme "fr_FR" en une liste ["fr", "FR"]
+            langue_loc = elements[0].upper() # premier élément (langue) mis en majuscule
+            if langue_loc in codes_connus:    
+                codretour = langue_loc
+            else: 
+                if len(elements) > 1:              # vérifier qu'il y a un 2e élément (le pays)
+                    pays_loc = elements[1].upper() # on le convertit en majuscule
+                    if pays_loc in codes_connus:
+                        codretour = pays_loc         # on prend le pays comme code langue
+        return codretour
 
 def sauver_langue(codlang):
     try:
