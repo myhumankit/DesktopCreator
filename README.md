@@ -42,12 +42,16 @@ Si vous devez compiler le programme, voici mes procédures de compilation :
 ## Compil avec PyInstaller :
 
 cd ~/DOCUMENTS/Python/DesktopCreator
+
 python3 -m venv venv
+
 source venv/bin/activate
 
 
 pip3 install pyinstaller
+
 pip3 install FreeSimpleGui
+
 pip3 install pillow
 
 
