@@ -7,7 +7,7 @@
 
 [1] Téléchargez le fichier "Release_Github_Linux.tar.gz" dans les [Releases]
 
-(https://github.com/myhumankit/DesktopCreator/releases/tag/V.1_2).
+(https://github.com/myhumankit/DesktopCreator/releases/tag/v.1_2).
 
 [2] Décompressez et lancez Script_install.sh (double-clic puis lancer)
 
