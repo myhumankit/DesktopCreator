@@ -3,7 +3,7 @@
 
 # Installation de DesktopCreator 
 
-## Procédure automatique : 
+## Procédure automatique : 
 
 [1] Téléchargez le fichier "Release_Github_Linux.tar.gz" dans les [Releases]
 
@@ -39,7 +39,7 @@ Cet exécutable est fourni au format binaire autonome. Il a été compilé pour 
 Si vous devez compiler le programme, voici mes procédures de compilation :
 
 
-## Compil avec PyInstaller :
+## Compil avec PyInstaller :
 
 cd ~/DOCUMENTS/Python/DesktopCreator
 python3 -m venv venv
